@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            background-color: brown;
+            display: inline-block;
+            position: relative;
+        }
+        li a{
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        li ul.dropdown li{
+            display: block;
+        }
+        li ul.dropdown{
+            width: 100%;
+            background: green;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+
+        li a:hover{
+            background: blueviolet;
+        }
+
+        li:hover ul.dropdown{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <li><a href="#">Nombre Apellido</a>
+        <ul class="dropdown">
+            <li><a href="#">Cerrar sesión</a></li>
+        </ul>
+    </li>
+
+</body>
+</html>

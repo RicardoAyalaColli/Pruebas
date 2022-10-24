@@ -1,0 +1,13 @@
+.dropdown{
+    position:relative;  
+}
+.dropdown ul{
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.dropdown:hover ul{
+    max-height: 50px;
+}
